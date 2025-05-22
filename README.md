@@ -1,4 +1,4 @@
-# **Classificação de Radiografias da Coluna Vertebral com Keras**
+## **Classificação de Radiografias da Coluna Vertebral com Keras**
 
 Este repositório contém uma implementação completa para classificar radiografias da coluna vertebral em três classes clínicas: **Normal**, **Escoliose (Scol)** e **Spondilolistese (Spond)**. O modelo utiliza o backbone **MobileNetV2** pré-treinado no ImageNet, ajustado com camadas personalizadas e treinado em duas fases (feature extraction e fine-tuning). A implementação é exclusivamente baseada na API moderna do **Keras**, garantindo simplicidade e eficiência.
 
@@ -12,9 +12,10 @@ Este repositório contém uma implementação completa para classificar radiogra
 4. [Como Usar](#como-usar)
    - [Treinamento do Modelo](#treinamento-do-modelo)
    - [Inferência com Imagens](#inferência-com-imagens)
-5. [Resultados Esperados](#resultados-esperados)
-6. [Contribuição](#contribuição)
-7. [Licença](#licença)
+5. [Executar no Google Colab](#executar-no-google-colab)
+6. [Resultados Esperados](#resultados-esperados)
+7. [Contribuição](#contribuição)
+8. [Licença](#licença)
 
 ---
 
@@ -26,7 +27,7 @@ O projeto foi desenvolvido para ajudar na classificação automatizada de radiog
 
 ## **Requisitos**
 
-Para executar este projeto, você precisará dos seguintes pacotes instalados:
+Para executar este projeto localmente, você precisará dos seguintes pacotes instalados:
 
 - Python >= 3.8
 - Jupyter
@@ -93,6 +94,16 @@ for filename in uploaded.keys():
     print(f"Predição: {predicao_classe}")
     print(f"Probabilidades: {probabilidades}")
 ```
+
+---
+
+## **Executar no Google Colab**
+
+Você pode executar este projeto diretamente no Google Colab sem precisar configurar o ambiente localmente. Acesse o notebook no link abaixo:
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1rHAHlBOYvd5wngeP3t69KeHVY6TNjQgi?usp=sharing)
+
+O notebook já está configurado com todas as dependências necessárias e pronto para uso.
 
 ---
 
